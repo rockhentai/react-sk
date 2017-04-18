@@ -5,4 +5,9 @@ import Profile from './profile';
 const ele = document.createElement('div');
 document.body.appendChild(ele);
 
-render(<Profile name="rockhentai" age="24" />,ele)
+const props = {
+  name:'rockhentai',
+  age:24
+}
+
+render(<Profile {...props} />,ele)
